@@ -53,10 +53,13 @@ const LeftButton = styled.div`
   opacity: 0.85;
   text-transform: uppercase;
   font-size: 12px;
+  font-weight: bold;
 `;
 
 const RightButton = styled(LeftButton)`
-  cursor: pointer;
+  color: black;
+  opacity: 0.65;
+  background: white;
 `;
 
 const ButtonGroup = styled.div`
@@ -67,7 +70,10 @@ const ButtonGroup = styled.div`
 const DownArrow = styled.img`
   margin-top: 20px;
   height: 40px;
-  animation: animateDown infinte 1.5s;
+  animation: bounce infinite 1.5s;
 `;
 
-const Buttons = styled.div``;
+const Buttons = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
