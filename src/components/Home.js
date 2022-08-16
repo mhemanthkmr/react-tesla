@@ -32,6 +32,20 @@ function Home() {
         rightButton="Existing Inventory"
         bgImage="model-y.jpg"
       />
+      <Section
+        title="Solar Roof"
+        description="Produce Clean Energy From Your Roof"
+        leftButton="Order Now"
+        rightButton="Learn More"
+        bgImage="solar-roof.jpg"
+      />
+      <Section
+        title="Solar Panel"
+        description="Order Onlile for Touchless Delivery"
+        leftButton="Order Now"
+        rightButton="Learn More"
+        bgImage="solar-panel.jpg"
+      />
     </Container>
   );
 }
