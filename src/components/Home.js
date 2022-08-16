@@ -4,7 +4,34 @@ import Section from "./Section";
 function Home() {
   return (
     <Container>
-      <Section />
+      <Section
+        title="Model S"
+        description="Order Onlile for Touchless Delivery"
+        leftButton="Custom Order"
+        rightButton="Existing Inventory"
+        bgImage="model-s.jpg"
+      />
+      <Section
+        title="Model 3"
+        description="Order Onlile for Touchless Delivery"
+        leftButton="Custom Order"
+        rightButton="Existing Inventory"
+        bgImage="model-3.jpg"
+      />
+      <Section
+        title="Model X"
+        description="Order Onlile for Touchless Delivery"
+        leftButton="Custom Order"
+        rightButton="Existing Inventory"
+        bgImage="model-x.jpg"
+      />
+      <Section
+        title="Model Y"
+        description="Order Onlile for Touchless Delivery"
+        leftButton="Custom Order"
+        rightButton="Existing Inventory"
+        bgImage="model-y.jpg"
+      />
     </Container>
   );
 }
