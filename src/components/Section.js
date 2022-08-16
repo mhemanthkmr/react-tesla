@@ -1,17 +1,17 @@
 import React from "react";
 import styled from "styled-components";
 
-function Section() {
+function Section({ title, description, leftButton, rightButton, bgImage }) {
   return (
-    <Wrap>
+    <Wrap backgroundImage={bgImage}>
       <ItemText>
-        <h1>Model S</h1>
-        <p>Order Online for Touchless Delivery</p>
+        <h1>{title}</h1>
+        <p>{description}</p>
       </ItemText>
       <Buttons>
         <ButtonGroup>
-          <LeftButton>Custom Order</LeftButton>
-          <RightButton>Existing Inventory</RightButton>
+          <LeftButton>{leftButton}</LeftButton>
+          <RightButton>{rightButton}</RightButton>
         </ButtonGroup>
         <DownArrow src="/images/down-arrow.svg" />
       </Buttons>
@@ -25,7 +25,7 @@ const Wrap = styled.div`
   width: 100vw;
   height: 100vh;
   background-size: cover;
-  background-image: url("images/model-s.jpg");
+  // background-image: url("images/model-s.jpg");ki
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
@@ -34,6 +34,7 @@ const Wrap = styled.div`
   align-items: center;
   scroll-snap-align: start;
   z-index: 1;
+  background-image: ${(props) => `url("images/${props.backgroundImage}")`};
 `;
 
 const ItemText = styled.div`
@@ -75,7 +76,7 @@ const ButtonGroup = styled.div`
 
 const DownArrow = styled.img`
   height: 40px;
-  // overflow-x: hidden;
+  overflow-x: hidden;
   animation: bounce infinite 1.5s;
 `;
 
