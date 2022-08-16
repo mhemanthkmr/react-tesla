@@ -6,7 +6,7 @@ function Section() {
     <Wrap>
       <ItemText>
         <h1>Model S</h1>
-        <p>Order Online</p>
+        <p>Order Online for Touchless Delivery</p>
       </ItemText>
       <Buttons>
         <ButtonGroup>
@@ -32,6 +32,8 @@ const Wrap = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  scroll-snap-align: start;
+  z-index: 1;
 `;
 
 const ItemText = styled.div`
@@ -54,6 +56,7 @@ const LeftButton = styled.div`
   text-transform: uppercase;
   font-size: 12px;
   font-weight: bold;
+  margin: 8px;
 `;
 
 const RightButton = styled(LeftButton)`
@@ -65,11 +68,14 @@ const RightButton = styled(LeftButton)`
 const ButtonGroup = styled.div`
   display: flex;
   padding: 15vh;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 const DownArrow = styled.img`
-  margin-top: 20px;
   height: 40px;
+  // overflow-x: hidden;
   animation: bounce infinite 1.5s;
 `;
 
