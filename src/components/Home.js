@@ -46,6 +46,11 @@ function Home() {
         rightButton="Learn More"
         bgImage="solar-panel.jpg"
       />
+      <Section
+        title="Accessories"
+        leftButton="Shop Now"
+        bgImage="accessories.jpg"
+      />
     </Container>
   );
 }
