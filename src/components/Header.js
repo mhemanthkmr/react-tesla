@@ -1,25 +1,26 @@
 import React from "react";
 import styled from "styled-components";
+import MenuIcon from "@mui/icons-material/Menu";
 
 function Header() {
   return (
     <Container>
-      <a>
+      <a href="#/">
         <img src="images/logo.svg" alt="" />
       </a>
 
       <Menu>
-        <a href="#">Model S</a>
-        <a href="#">Model 3</a>
-        <a href="#">Model X</a>
-        <a href="#">Model Y</a>
-        <a href="#">Solar Roof</a>
-        <a href="#">Solar Panels</a>
+        <a href="#/">Model S</a>
+        <a href="#/">Model 3</a>
+        <a href="#/">Model X</a>
+        <a href="#/">Model Y</a>
+        <a href="#/">Solar Roof</a>
+        <a href="#/">Solar Panels</a>
       </Menu>
       <RightMenu>
-        <a href="#">Shop</a>
-        <a href="#">Account</a>
-        <a href="#">Menu</a>
+        <a href="#/">Shop</a>
+        <a href="#/">Account</a>
+        <CustomMenu />
       </RightMenu>
     </Container>
   );
@@ -65,3 +66,5 @@ const RightMenu = styled.div`
     margin-right: 10px;
   }
 `;
+
+const CustomMenu = styled(MenuIcon);
